@@ -38,3 +38,30 @@ const namaMantan = ["jamet", "ismed", "julaeha", "inem"];
 //     }, {})
 // );
 
+
+// looping for
+// for (let index = 0; index < namaMantan.length; index++) {
+//     let element = namaMantan[index];
+
+//     console.log(element);
+// }
+
+// looping while
+// let index = 0;
+// while (index < namaMantan.length) {
+//     const element = namaMantan[index];
+//     console.log(element);
+//     index++;
+// }
+
+
+// method map
+console.log(
+    namaMantan
+        .filter(function (mantan, ke) {
+            return mantan != "ismed";
+        })
+        .map(function (mantan, ke) {
+            return `${mantan} adalah mantan ke ${ke + 1} `;
+        })
+);
